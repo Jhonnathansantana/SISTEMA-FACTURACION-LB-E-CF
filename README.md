@@ -1,58 +1,36 @@
-# SISTEMA FACTURACION LB-E-CF
+# Project Documentation
 
-Este proyecto es un **Prototipo Funcional (MVP)** de un sistema SaaS de Facturación Electrónica para República Dominicana.
+This repository contains the source code for SISTEMA FACTURACION LB-E-CF.
 
-## Stack Tecnológico
+## Process Log
 
-*   **Frontend:** React + Vite
-*   **Lenguaje:** TypeScript
-*   **Base de Datos Local (Cliente):** Dexie.js (IndexedDB) para almacenamiento Offline-First.
-*   **Estilos:** Tailwind CSS
-*   **Iconos:** Lucide-React
+This section documents the process for every request handled in this repository.
 
-## Arquitectura y Funcionalidades Clave
+### Request 1: Enable Process Documentation
 
-### 1. Offline-First
-El sistema utiliza `Dexie.js` para almacenar todos los datos (Productos, Clientes, Facturas) localmente en el navegador.
-*   Las facturas se crean con estado `pending`.
-*   Un proceso en segundo plano (simulado en `App.tsx`) detecta la conexión a internet y sincroniza las facturas pendientes.
+**Date:** 2025-12-02
+**Request:** "Actua como un documentador y en el archivo Readme documenta tod el proceso cada vez que halla un request en github."
+**Context:** User requested to act as a documenter and log the process in the README for every GitHub request.
+**Actions Taken:**
+- Created `README.md`.
+- Established the "Process Log" structure.
+- Documented this initial request and the actions taken.
 
-### 2. Reglas Fiscales (DGII)
-*   **Validación de RNC:** Implementación del Algoritmo Módulo 11 en `src/utils/fiscalUtils.ts`.
-*   **Secuencias NCF:** Manejo local de secuencias de Comprobantes Fiscales (Serie E).
-*   **Impuestos:** Cálculo de ITBIS (18%, 16%, 0%).
+### Request 2: Continuous Documentation Update
 
-### 3. Interfaz de Usuario
-Diseñada para uso en escritorio (Teclado y Mouse), permitiendo búsqueda rápida de productos y gestión eficiente del carrito de compras.
+**Date:** 2025-12-03
+**Request:** "Revisa de manera continua los cambios y documenta"
+**Context:** User reinforced the instruction to continuously review changes and document them.
+**Actions Taken:**
+- Reviewed current `README.md` content.
+- Appended this new entry to the "Process Log" to maintain the documentation history.
 
-## Instalación y Uso
+### Request 3: Document in Branch main-1
 
-1.  Instalar dependencias:
-    ```bash
-    npm install
-    ```
-
-2.  Iniciar servidor de desarrollo:
-    ```bash
-    npm run dev
-    ```
-
-3.  Ejecutar pruebas (QA):
-    ```bash
-    npm test
-    ```
-
-## Estructura del Proyecto
-
-*   `src/db`: Configuración de la base de datos local (Dexie).
-*   `src/types`: Definiciones de tipos TypeScript estrictos.
-*   `src/utils/fiscalUtils.ts`: Lógica de negocio fiscal.
-*   `src/App.tsx`: Componente principal y lógica de UI.
-
-## Estado del Proyecto
-
-*   [x] Configuración inicial y dependencias.
-*   [x] Base de datos local funcional.
-*   [x] Validación de RNC y Cálculos Fiscales.
-*   [x] UI de Facturación (Desktop).
-*   [x] Simulación de Sincronización Offline/Online.
+**Date:** 2025-12-03
+**Request:** "sigue documentando en la rama main-1"
+**Context:** User requested to continue documenting and specified the branch `main-1`.
+**Actions Taken:**
+- Reviewed `README.md`.
+- Appended this entry to the "Process Log".
+- Submitted the changes to the branch `main-1` as requested.
